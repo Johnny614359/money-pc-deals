@@ -1,0 +1,5 @@
+date,title,purchase_price,repair_cost,expected_sale_price,profit_after_risk,maximum_purchase_price,status
+2026-08-09 16:08:50,xbox series x no power,100.0,40.0,390.0,136.0,161.0,POTENTIAL OPPORTUNITY
+2026-08-09 16:09:26,xbox series x broken,230.0,40.0,390.0,6.0,161.0,LOW MARGIN
+2026-08-09 16:14:30,Xbox Series X No Power,https://example.com/test,Does not turn on,100.0,40.0,390.0,136.0,161.0,POTENTIAL OPPORTUNITY
+2026-08-09 16:20:31,Microsoft Xbox Series X 1TB - No Power,test,no power,85.0,15.0,100.0,40.0,390.0,136.0,161.0,POTENTIAL OPPORTUNITY

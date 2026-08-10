@@ -1,0 +1,8 @@
+fault,repair_cost,risk_reserve,risk_level,reject,success_probability
+No power,50,100,HIGH,false,0.50
+HDMI / display,60,90,HIGH,false,0.50
+Disc drive,50,60,MEDIUM,false,0.60
+Cooling / shutdown,40,70,MEDIUM,false,0.60
+Unknown / untested,60,120,HIGH,false,0.30
+Major damage / missing parts,100,150,EXTREME,true,0.10
+Unclassified,60,100,HIGH,false,0.30
