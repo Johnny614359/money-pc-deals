@@ -19,6 +19,8 @@ def run_command(command):
             print(result.stderr.strip())
         sys.exit(result.returncode)
 
+    return result
+
 
 print()
 print("================================")
@@ -33,16 +35,15 @@ print()
 print("2. Staging website changes...")
 run_command("git add index.html deals.csv")
 
-status = subprocess.run(
-    "git status --porcelain",
-    shell=True,
-    text=True,
-    capture_output=True
-).stdout.strip()
+# Check ONLY for staged changes that would actually be committed
+staged_changes = subprocess.run(
+    "git diff --cached --quiet",
+    shell=True
+)
 
-if not status:
+if staged_changes.returncode == 0:
     print()
-    print("No changes found.")
+    print("No website changes found.")
     print("Nothing to publish.")
     sys.exit(0)
 
