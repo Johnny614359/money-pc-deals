@@ -23,6 +23,7 @@ print("================================")
 print("       MONEY PC BOT")
 print("================================")
 
+run("python import_products.py")
 run("python rank_deals.py")
 run("python publish_site.py")
 
