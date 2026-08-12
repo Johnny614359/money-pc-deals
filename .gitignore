@@ -4,3 +4,4 @@ secrets.json
 credentials.json
 __pycache__/
 *.pyc
+candidates.csv
